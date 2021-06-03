@@ -44,10 +44,10 @@ public class Date {
 	 */
 	private void setDay(int day) {
 		if (day <= 1) {
-			throw new IllegalArgumentException("day must greater or equal to 1.");
+			throw new IllegalArgumentException("day must greater or equal to 1."); //fixed
 		}
 		if (day >= 31){
-			throw new IllegalArgumentException("day must less or equal to 31.");
+			throw new IllegalArgumentException("day must less or equal to 31."); // fixed
 		}
 		if (isThirtyDayMonth() && day > 30) {
 			throw new IllegalArgumentException("day must less than 30 for month " + monthNames[month-1]);
