@@ -15,8 +15,8 @@ https://github.com/ben-flynn/seg_3503_playground
 
 
 Here are the initial coverage results
-I was unfortunatly unable to much affect the coverage percentage that much after numerous attempts.
-:
+I was unfortunatly unable to much affect the coverage percentage that much after numerous attempts. I believe part of the problem
+was that the compilations were not syncing when I was re-running the program.
 
 
 This is a snippet of the console
