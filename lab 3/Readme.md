@@ -18,7 +18,10 @@ Here are the initial coverage results:
 
 
 This is a snippet of the console
+
 ![alt text](https://github.com/ben-flynn/seg_3503_playground/blob/main/lab%203/snippets/console%201.PNG)
 
-This is the snippet of the Html report
+
+This is the snippet of the initial Html report:
+
 ![alt text](https://github.com/ben-flynn/seg_3503_playground/blob/main/lab%203/snippets/initial%20results.PNG)
