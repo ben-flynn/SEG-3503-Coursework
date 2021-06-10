@@ -39,7 +39,7 @@ void testResults1() {
     @Test
     void testResults5() {
         Tic test = new Tic();
-        assertArrayEquals(resultTest5, test.createBoard(2,3));
+        assertArrayEquals(resultTest5, test.createBoard(3,2));
     }
 
 
