@@ -19,9 +19,16 @@ void testResults1() {
 }
 
     @Test
-    void testResults1() {
+    void testResults2() {
         Tic test = new Tic();
         assertArrayEquals(resultTest2, test.createBoard(2,2));
     }
+
+    @Test
+    void testResults3() {
+        Tic test = new Tic();
+        assertArrayEquals(resultTest2, test.createBoard(3,1));
+    }
+
 
 }
