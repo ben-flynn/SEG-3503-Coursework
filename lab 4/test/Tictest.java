@@ -13,6 +13,10 @@ String[][] resultTest3 = {{"|", " ", "|"},{"|", " ", "|"},{"|", " ", "|"}}; //3,
 String[][] resultTest4 = {{"|", " ", "|", "|", " ", "|", "|", " ", "|"}};//1,3
 String[][] resultTest5 = {{"|", " ", "|", "|", " ", "|", "|", " ", "|"}, {"|", " ", "|", "|", " ", "|", "|", " ", "|"}}; //2,3
 
-
+@Test
+void testResults1(){
+Tic test = new Tic();
+assertArrayEquals(resultTest1, test.createBoard(1,1));
+}
 
 }
