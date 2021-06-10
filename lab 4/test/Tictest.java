@@ -16,7 +16,7 @@ String[][] resultTest5 = {{"|", " ", "|", "|", " ", "|", "|", " ", "|"}, {"|", "
 @Test
 void testResults1(){
 Tic test = new Tic();
-assertArrayEquals(resultTest1, test.createBoard(1,1));
+assertArrayEquals(resultTest1, test.createBoard(0,1));
 }
 
 }
