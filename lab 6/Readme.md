@@ -1,4 +1,4 @@
-#Lab 6
+# Lab 6
 
 | Outline | Names |
 | --- | --- |
@@ -6,12 +6,10 @@
 | Date | Summer 2021 |
 | Student | benjamin flynn - 300106230 |
 
-
 ## Repository link
 https://github.com/ben-flynn/seg_3503_playground
 
-
-## Part 1 setting up
+### Part 1 setting up
 1: Checking that maven has been installed properly
 
 ![alt text](https://github.com/ben-flynn/seg_3503_playground/blob/main/lab%206/Captures/version%20mvn.PNG)
@@ -24,7 +22,7 @@ https://github.com/ben-flynn/seg_3503_playground
 
 ![alt text](https://github.com/ben-flynn/seg_3503_playground/blob/main/lab%206/Captures/server%20running.PNG)
 
-## Part 2 testing
+### Part 2 testing
 1: Writing first test
 
 ![alt text](https://github.com/ben-flynn/seg_3503_playground/blob/main/lab%206/Captures/First%20test.PNG)
