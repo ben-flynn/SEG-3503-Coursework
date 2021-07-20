@@ -106,6 +106,48 @@ public void myFirstTest() {
 
 
 
+@Test
+
+public void Testcase2() {
+
+  driver.get("http://localhost:8080/admin");
+
+  String currentURL = driver.getCurrentUrl();
+  String expectedURL = "http://localhost:8080/login";
+  assertEquals(expectedURL, currentURL);
+
+  WebElement username = driver.findElement(By.id("loginId"));
+  username.sendKeys("admi");
+
+  WebElement password = driver.findElement(By.name("password"));
+  password.sendKeys("passwor");
+
+  WebElement loginbutton = driver.findElement(By.id("loginBtn"));
+  loginbutton.click();
+
+
+  expectedURL = "http://localhost:8080/login?error";
+  currentURL = driver.getCurrentUrl();
+  assertEquals(expectedURL, currentURL);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 private String[] getWords(String s) {
