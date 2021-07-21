@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: selenium.ExampleSeleniumTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.771 s - in selenium.ExampleSeleniumTest
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 20.93 s <<< FAILURE! - in selenium.ExampleSeleniumTest
+testcase5  Time elapsed: 11.498 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='fr-CA']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-J4M092J', ip: '192.168.86.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\benin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cfdf660de5368c1533411ffd2d628ab5
+*** Element info: {Using=xpath, value=//input[@value='fr-CA']}
+	at selenium.ExampleSeleniumTest.testcase5(ExampleSeleniumTest.java:239)
+

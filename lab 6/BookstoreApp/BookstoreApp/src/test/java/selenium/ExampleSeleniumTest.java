@@ -217,6 +217,45 @@ public void testcase4() {
 
 
 
+@Test
+
+public void testcase5() {
+
+  driver.get("http://localhost:8080/admin");
+
+  String currentURL = driver.getCurrentUrl();
+  String expectedURL = "http://localhost:8080/login";
+  assertEquals(expectedURL, currentURL);
+  WebElement username = driver.findElement(By.id("loginId"));
+  username.sendKeys("admin");
+  WebElement password = driver.findElement(By.name("password"));
+  password.sendKeys("password");
+  WebElement loginbutton = driver.findElement(By.id("loginBtn"));
+  loginbutton.click();
+
+  WebElement languageSelect = driver.findElement(By.id("locales"));
+  languageSelect.click();
+
+  WebElement frenchSelect = driver.findElement(By.xpath("//input[@value='fr-CA']"));  
+  frenchSelect.click();
+  
+
+  WebElement frenchTitle = driver.findElement(By.id("title"));
+  String title = languageSelect.getText();
+  String expectedText = "Librairie Y'AMAZONE";
+  assertEquals(expectedText, title);
+
+}
+
+
+
+
+
+
+
+
+
+
 
         
 
