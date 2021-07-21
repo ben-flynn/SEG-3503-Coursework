@@ -80,7 +80,7 @@ class ExampleSeleniumTest {
 
 @Test
 
-public void myFirstTest() {
+public void testcase1() {
 
   driver.get("http://localhost:8080/admin");
 
@@ -132,6 +132,8 @@ public void testcase2() {
         }
 
 
+
+
 @Test
 
 public void testcase3() {
@@ -156,29 +158,70 @@ public void testcase3() {
   assertEquals(expectedURL, currentURL);
 
   WebElement logoutbutton = driver.findElement(By.xpath("//input[@value='Sign out']"));
+  logoutbutton.click();
 
   expectedURL = "http://localhost:8080/login?logout";
   currentURL = driver.getCurrentUrl();
   assertEquals(expectedURL, currentURL);
+}
 
 
 
+@Test
+public void testcase4() {
 
-        }
+  driver.get("http://localhost:8080/admin");
 
+  String currentURL = driver.getCurrentUrl();
+  String expectedURL = "http://localhost:8080/login";
+  assertEquals(expectedURL, currentURL);
+  WebElement username = driver.findElement(By.id("loginId"));
+  username.sendKeys("admin");
+  WebElement password = driver.findElement(By.name("password"));
+  password.sendKeys("password");
+  WebElement loginbutton = driver.findElement(By.id("loginBtn"));
+  loginbutton.click();
 
+  expectedURL = "http://localhost:8080/admin";
+  currentURL = driver.getCurrentUrl();
+  assertEquals(expectedURL, currentURL);
 
+  WebElement category = driver.findElement(By.id("addBook-category"));
+  category.sendKeys("hello");
+  WebElement bookId = driver.findElement(By.id("addBook-id"));
+  BookId.sendKeys("123456");
+  WebElement title = driver.findElement(By.id("addBook-title"));
+  username.sendKeys("hello");
+  WebElement author = driver.findElement(By.id("addBook-authors"));
+  username.sendKeys("Ben");
+  WebElement cost = driver.findElement(By.id("cost"));
+  cost.sendKeys("12");
+  WebElement addButton = driver.findElement(By.name("addBook"));
+  addButton.click();
 
+  WebElement search = driver.findElement(By.id("search"));
+  search.sendKeys("hello");
+  WebElement searchButton = driver.findElement(By.id("searchBtn"));
+  searchButton.click();
 
+  WebElement addedBook = driver.findElement(By.id("title-123456"));
+  String expectedText = "hello";
+  assertEquals(expectedText, addedBook.getText());
 
+  WebElement deleteButton = driver.findElement(By.id("del-123456"));
+  deleteButton.click(); 
+  expectedURL = "http://localhost:8080/admin/catalog";
+  currentURL = driver.getCurrentUrl();
 
-
-
+}
 
 
 
 
         
+
+
+
 
 
 private String[] getWords(String s) {
