@@ -105,10 +105,9 @@ public void myFirstTest() {
         }
 
 
-
 @Test
 
-public void Testcase2() {
+public void testcase2() {
 
   driver.get("http://localhost:8080/admin");
 
@@ -133,7 +132,39 @@ public void Testcase2() {
         }
 
 
+@Test
 
+public void testcase3() {
+
+  driver.get("http://localhost:8080/admin");
+
+  String currentURL = driver.getCurrentUrl();
+  String expectedURL = "http://localhost:8080/login";
+  assertEquals(expectedURL, currentURL);
+
+  WebElement username = driver.findElement(By.id("loginId"));
+  username.sendKeys("admin");
+
+  WebElement password = driver.findElement(By.name("password"));
+  password.sendKeys("password");
+
+  WebElement loginbutton = driver.findElement(By.id("loginBtn"));
+  loginbutton.click();
+
+  expectedURL = "http://localhost:8080/admin";
+  currentURL = driver.getCurrentUrl();
+  assertEquals(expectedURL, currentURL);
+
+  WebElement logoutbutton = driver.findElement(By.xpath("//input[@value='Sign out']"));
+
+  expectedURL = "http://localhost:8080/login?logout";
+  currentURL = driver.getCurrentUrl();
+  assertEquals(expectedURL, currentURL);
+
+
+
+
+        }
 
 
 
