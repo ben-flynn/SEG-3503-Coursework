@@ -189,11 +189,11 @@ public void testcase4() {
   WebElement category = driver.findElement(By.id("addBook-category"));
   category.sendKeys("hello");
   WebElement bookId = driver.findElement(By.id("addBook-id"));
-  BookId.sendKeys("123456");
+  bookId.sendKeys("123456");
   WebElement title = driver.findElement(By.id("addBook-title"));
-  username.sendKeys("hello");
+  title.sendKeys("hello");
   WebElement author = driver.findElement(By.id("addBook-authors"));
-  username.sendKeys("Ben");
+  author.sendKeys("Ben");
   WebElement cost = driver.findElement(By.id("cost"));
   cost.sendKeys("12");
   WebElement addButton = driver.findElement(By.name("addBook"));
